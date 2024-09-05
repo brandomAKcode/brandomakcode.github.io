@@ -1,13 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://i.imgur.com/apNiO7Q.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(7px);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.body-bk {
+  @apply bg-gradient-to-b;
+  @apply from-slate-950;
+  @apply to-green-950;
+}
+
+.gradient-1 {
+  background: linear-gradient(to bottom, rgba(241, 10, 10, 0), #020617);;
 }
